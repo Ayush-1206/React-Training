@@ -1,0 +1,44 @@
+.header {
+  border: 1px solid #000;
+  height: 75px;
+  display: flex;
+}
+
+.header > div {
+  width: 50%;
+  padding: 5px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.navbar > ul {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.res-container {
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+  display: flex;
+}
+
+.card {
+  background-color: #dcdcdc;
+  flex-direction: column;
+  width: 200px;
+  display: flex;
+}
+
+.card:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.card > img {
+  padding: 1px;
+}
+
+/*# sourceMappingURL=index.1303bb05.css.map */

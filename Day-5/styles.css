@@ -1,0 +1,42 @@
+
+
+
+
+
+.header{
+    display: flex;
+    height: 75px;
+    border:1px solid black;
+}
+.header > div{
+    width: 50%;
+    padding: 5px;
+}
+.logo{
+    height:70px;
+}
+.navbar > ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.res-container{
+    margin:10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    width: 200px;
+    
+    display: flex;
+    flex-direction: column; 
+    background-color: gainsboro;
+}
+.card:hover{
+    border:1px solid black;
+    cursor: pointer;
+}
+.card > img{
+    padding:1px;
+}
