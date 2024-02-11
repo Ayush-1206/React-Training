@@ -1,16 +1,17 @@
-// import React from "react";
+import {IMGCDN_URL} from '../utils/config';
 
 const RestaurantCard = (props) =>{
-    const {imgURL, resName, cuisins, rating, price, time } = props.data; 
-    console.log(props);
+    
     return(
         <div className="card">
-            <img src={imgURL}></img>
-            <div>{resName}</div>
-            <div>{cuisins}</div>
-            <div>{price}₹</div>
-            <div>{time} </div>
-            <div>{rating}</div>
+             <img src={`${IMGCDN_URL}` + `${props?.resData?.info?.cloudinaryImageId}`}/>
+            <div>
+                <div>{props?.resData?.info?.aggregatedDiscountInfoV3?.header} {props?.resData?.info?.aggregatedDiscountInfoV3?.subHeader}</div>
+            </div>
+            <div>{props?.resData?.info?.avgRating}</div>
+            <div>{props?.resData?.info?.name}</div>
+            <div>{props?.resData?.info?.locality}</div>
+            <div>{props?.resData?.info?.sla?.slaString}</div>
             
         </div>
     )

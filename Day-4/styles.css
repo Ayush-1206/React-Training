@@ -14,7 +14,7 @@
     overflow-x:hidden;
 }
 .header{
-    background-color: grey;
+    background-color: rgb(199, 189, 189);
     height:50px;
     display: flex;
     justify-content: center;
@@ -23,6 +23,7 @@
 }
 .head{
     font-size: 1.5rem;
+    text-shadow: 2px 2px 5px whitesmoke;
     /* position:fixed; */
 }
 
